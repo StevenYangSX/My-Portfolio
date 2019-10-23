@@ -1,9 +1,34 @@
 .project-content {
-    margin-top: 100px;
+    margin-top: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* justify-items: center; */
+    /* align-items: center; */
 }
 
 .card-header {
     font-size: 18px;
+    color:rgb(177, 174, 174);
+}
+
+@media screen and (max-width: 400px) {
+    .project-content {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
+         align-items: center;
+    }
+  
+}
+
+@media screen and (max-width: 875px) and (min-width: 401px) {
+    .project-content {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+        
+    }
+  
 }
