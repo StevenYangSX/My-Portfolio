@@ -2,7 +2,7 @@
     "name": "my_portfolio",
     "version": "1.0.0",
     "main": "index.html",
-    "homepage": "https://stevenyangsx.github.io/My-Portfolio",
+    "homepage": "https://stevenyangsx.github.io/My-Portfolio/mainPage/index.html",
     "scripts": {
         "deploy": "gh-pages -d mainPage"
     },
