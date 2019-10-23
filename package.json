@@ -1,6 +1,12 @@
 {
     "name": "my_portfolio",
-    "version":"1.0.0",
+    "version": "1.0.0",
     "main": "index.html",
-    "homepage": "https://"
+    "homepage": "https://stevenyangsx.github.io/My-Portfolio",
+    "scripts": {
+        "deploy": "gh-pages -d mainPage"
+    },
+    "dependencies": {
+        "gh-pages": "^1.2.0"
+    }
 }
