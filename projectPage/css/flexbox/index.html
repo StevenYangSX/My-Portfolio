@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box Model</title>
+    <style>
+        @media (min-width: 768px) {
+            .container-1 {
+            display: flex;
+            /*This align-items adjust item's padding. Make them no longer
+            the same height.
+            align-items: flex-end;   align-items: center;
+            
+            flex-direction: column;
+            */
+            }
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+            } 
+        }
+        
+        .container-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container-1 div , .container-2 div, .container-3 div{
+            
+            color: black;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex:3;
+            order: 2;
+        }
+        .box-2 {
+            flex:1;
+            order: 1
+        }
+        .box-3 {
+            flex:1;
+            order:3;
+        }
+
+        .container-2-box {
+            flex-basis:20%;
+        }
+
+        .container-3-box {
+            flex-basis:10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box 1</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+        <div class="box-2">
+            <h3>Box 2</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+        <div class="box-3">
+            <h3>Box 3</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box 1</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box 2</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+        <div class="container-2-box ">
+            <h3>Box 3</h3>
+            <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+        </div>
+    </div>
+
+    <div class="container-3">
+            <div class="container-3-box">
+                <h3>Box 1</h3>
+                <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+            </div>
+            <div class="container-3-box">
+                <h3>Box 2</h3>
+                <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+            </div>
+            <div class="container-3-box ">
+                <h3>Box 3</h3>
+                <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+            </div>
+            <div class="container-3-box">
+                    <h3>Box 4</h3>
+                    <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+                </div>
+                <div class="container-3-box">
+                    <h3>Box 5</h3>
+                    <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+                </div>
+                <div class="container-3-box ">
+                    <h3>Box 6</h3>
+                    <p>This is box 1 and dfjf jdf just some dumb text.jdfj. .dsf..sdf .sdf. </p>
+                </div>
+        </div>
+</body>
+</html>
