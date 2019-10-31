@@ -159,6 +159,10 @@ body:after {
     line-height: 38px;
 }
 
+.resume {
+    color: rgb(214, 214, 106);
+}
+
 
 @media screen and (max-width: 650px) {
     #leftshow {
